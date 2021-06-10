@@ -1,0 +1,124 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Istatistik_index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@*<h2>Burası ödev 2</h2>*@
+<style>
+    body {
+
+    }
+
+    .box1 {
+        background: #49ad7f;
+        border-radius: 5px;
+        height: 140px;
+        text-align: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-style: initial;
+        width:230px;
+        margin-left:30px;
+
+    }
+    .box2 {
+        background: #38d85d;
+        border-radius: 5px;
+        height: 140px;
+        text-align: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-style: initial;
+        width: 230px;
+        margin-left: 22px;
+    }
+    .box3 {
+        background: #6163c8;
+        border-radius: 5px;
+        height: 140px;
+        text-align: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-style: initial;
+        width: 230px;
+        margin-left: 13px;
+    }
+    .box4 {
+        background: #8426a4;
+        border-radius:5px;
+        height: 140px;
+        text-align: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-style: initial;
+        width: 230px;
+        margin-left: 10px;
+    }
+    .box5 {
+        background: #ffd800;
+        border-radius: 5px;
+        height: 140px;
+        text-align: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-style: initial;
+        width: 230px;
+        margin-left: 30px;
+    }
+
+
+    .col-lg-3, .col-md-4, .col-xs-4 {
+        margin-top: 20px !important;
+    }
+</style>
+<div class="container">
+ 
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-4 ">
+            <div class="box1">
+                <br />
+                <h1>@ViewBag.KategoriSayisi</h1>
+                Kategori Sayısı
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-4 ">
+            <div class="box2">
+                <br />
+                <h1>@ViewBag.baslikSayisi</h1>
+                Yazılım Kategorisine Ait Başlık Sayısı
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-4 ">
+            <div class="box3">
+                <br />
+                <h1>@ViewBag.yazarSayisi</h1>
+                Yazar Adında 'a' Harfi Geçen Yazar Sayısı
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-4 ">
+            <div class="box4">
+                <br />
+                <h1>@ViewBag.KategoriAdi</h1>             
+                En fazla başlığa sahip kategori adı
+            </div>
+        </div>
+    </div>
+
+        <div class="row">   
+            <div class="col-lg-2 col-md-3 col-xs-4 ">
+                <div class="box5">
+                    <br />
+                    <h1>@ViewBag.StatusFark</h1>                
+                    Kategoriler arasındaki sayısal fark
+                </div>
+            </div>
+        </div>
+    </div>
